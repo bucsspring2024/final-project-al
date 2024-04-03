@@ -2,12 +2,12 @@
 
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# << Project Title >>
-## CS110 Final Project  << Semester, Year >>
+# Andrew Liu's Final Project
+## CS110 Final Project  Spring 2024
 
 ## Team Members
 
-<< List team member names >>
+Andrew Liu
 
 ***
 
