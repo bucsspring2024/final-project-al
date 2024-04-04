@@ -21,7 +21,7 @@ A Wack-A-Mole Game. Players will be timed on their ability to hit a target when 
 
 ### Initial Design
 
-![initial gui](assets/initial draft.jpg)
+![initial gui](assets/Initial_draft.jpg)
 
 ### Final Design
 
