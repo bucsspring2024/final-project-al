@@ -1,9 +1,15 @@
+import pygame
 
 class Controller:
   
   def __init__(self):
-    pass
-    #setup pygame data
+    pygame.init()
+    self.screen = pygame.display.set_mode()
+    self.background = pygame.image.load("assets/Initial_draft.jpg")
+    self.state = "menu"
+    pygame.display.flip()
+    pygame.time.wait(10000)
+    pygame.quit()
     
   def mainloop(self):
     pass
@@ -36,3 +42,4 @@ class Controller:
       #update data
 
       #redraw
+

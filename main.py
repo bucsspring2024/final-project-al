@@ -11,3 +11,14 @@ def main():
 # https://codefather.tech/blog/if-name-main-python/
 if __name__ == '__main__':
     main()
+
+pygame.init()
+width=1000
+height=1000
+z=[width,height]
+surface= pygame.display.set_mode(z)
+bg =pygame.image.load("./assets/Backgound.jpg")
+surface.blit(bg,(0,0))
+pygame.display.flip()
+pygame.time.wait(3000)
+pygame.quit()   
