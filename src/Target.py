@@ -1,4 +1,3 @@
-import random
 import pygame
 
 class mole(pygame.sprite.Sprite):
