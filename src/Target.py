@@ -1,5 +1,4 @@
 import pygame
-
 class mole(pygame.sprite.Sprite):
     
     def __init__(self,x,y,img="./assets/mole.PNG"):
@@ -13,7 +12,6 @@ class mole(pygame.sprite.Sprite):
         
     def update(self):
         pass
-
             # pos = [(300,210),(465,210),(620,210),(295,340),(465,340),(625,340),(295,465),(465,465),(630,460)]
             
             # posi = random.randrange(0,8)

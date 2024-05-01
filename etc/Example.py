@@ -33,33 +33,25 @@ class Controller:
 
   def menuloop(self):
     while self.state == "menu":
-      self.screen.fill("Black")
-      font =pygame.font.Font('freesansbold.ttf',30)
-      text= font.render('How many moles can you hit in one minute?',True,"white")
-      self.screen.blit(text,(130,100))
-      font =pygame.font.Font('freesansbold.ttf',100)
-      text= font.render('Play',True,"white","green")
-      self.screen.blit(text,(200,250))
-      font =pygame.font.Font('freesansbold.ttf',100)
-      text= font.render('Quit',True,"white","red")
-      self.screen.blit(text,(500,250))
       pygame.display.update()
       for event in pygame.event.get():
         if event.type == pygame.QUIT:
           exit()
         if event.type == pygame.MOUSEBUTTONDOWN:
-          mpos= pygame.mouse.get_pos()
-          if mpos[0] <=415 and mpos[0] >= 200 and mpos[1] <=350 and mpos[1]>=250:
-            self.state = "game"
-          if mpos[0] <=715 and mpos[0] >= 500 and mpos[1] <=350 and mpos[1]>=250:
-            exit()
+          self.state = "game"
+      #event loop
 
+      #update data
+
+      #redraw
+  
   def make(self):
     posi = random.randrange(0,9)
     blank = pos[posi]
     self.moles.add(mole(blank[0],blank[1]))
   def gameloop(self):
     count = 0
+    self.Countdown()
     while self.state == "game":
       for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -86,13 +78,7 @@ class Controller:
       #redraw
     
   def gameoverloop(self):
-    while self.state== "endgame":
-      pygame.display.update()
-      for event in pygame.event.get():
-        if event.type == pygame.MOUSEBUTTONDOWN():
-          
-          pygame.quit()
-          quit()
+    pass
       #event loop
 
       #update data
