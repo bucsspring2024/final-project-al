@@ -1,11 +1,20 @@
 import time
-import datetime
+from datetime import datetime
 
 class Timer:
-    def Countdown(self,seconds=60):
-        while seconds > 0:
-            timer= datetime.timedelta(seconds)
-            time.sleep(1)
-            seconds -= 1
-            print(seconds)
-        print("Game over")
+    def __init__(self,seconds=30):
+        '''
+        Initializes the timer of the game
+        The game will be 30 seconds unless programmed otherwise
+        '''
+        self.seconds = seconds
+        self.current= datetime.now()
+        time.sleep(1)
+        seconds -= 1
+    def timesup(self):
+        now= datetime.now()
+        diff = now-self.current
+        if diff.total_seconds() >= self.seconds:
+            return True
+        else:
+            return False

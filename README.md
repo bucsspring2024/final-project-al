@@ -1,9 +1,7 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=14588429&assignment_repo_type=AssignmentRepo)
 
-:warning: Everything between << >> needs to be replaced (remove << >> after replacing)
-
-# Andrew Liu's Final Project
-## CS110 Final Project  Spring 2024
+# Andrew Liu's Whack-a-Mole
+## CS110 Final Project Spring 2024
 
 ## Team Members
 
@@ -25,7 +23,9 @@ A Whack-A-Mole Game. Players will be timed and within that time they must click 
 
 ### Final Design
 
-![final gui](assets/finalgui.jpg)
+![final gui](assets/Final_GUI.PNG)
+![final gui](assets/Game_GUI.PNG)
+![final gui](assets/End_GUI.PNG)
 
 ## Program Design
 
@@ -39,7 +39,11 @@ A Whack-A-Mole Game. Players will be timed and within that time they must click 
 
 ### Classes
 
-- << You should have a list of each of your classes with a description >>
+-target: Initializes the mole sprite
+
+-timer: Initializes the timer for the game
+
+-sample_controller.py: Is the mainloop for the program
 
 ## ATP
 ### Score
@@ -55,7 +59,7 @@ A Whack-A-Mole Game. Players will be timed and within that time they must click 
 |  1                   | Start game           | Game starts |
 |  2                   | Moles start appearing   | Moles pop out of one of nine holes   |
 |  3                   | Click on the mole  | Mole is gone and hit counter adds|
-|  4                   | Don't click on mole | Mole stays until clicked or game over |
+|  4                   | Don't click on mole | Mole stays until clicked or until game over |
 ### Timer
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
@@ -67,10 +71,10 @@ A Whack-A-Mole Game. Players will be timed and within that time they must click 
 |----------------------|:--------------------:|----------------------------------:|
 |  1                   | Start game           | Menu appears    |
 |  2                   | Click Start         | Game starts  |
-|  3                   | Click quit button       | Game closes the program|
-### Error
+|  3                   | Click quit button       | Game closes|
+### Gameover Navigation
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
 |  1                   | Start game           | Game starts   |
-|  2                   | Any invalid inputs during game | Game does not crash or break  |
-|  3                   | Error detected      | Game shows error message |
+|  2                   | Click Replay        | Game returns to game state |
+|  3                   | Click Quit          | Game closes |
